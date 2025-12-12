@@ -1,0 +1,64 @@
+default survey:
+  default: True
+
+season:
+  YEAR_MIN: "2025"
+  YEAR_MAX: "2026"
+
+output directory:
+  dir: "'./aggregated_files/"
+
+
+columns: #if your survey has different column names, replace those on the right with the respective and proper code
+    ID: "participant_ID"
+    timestamp: "submitted"
+    gender: "intake.Q1"
+    age: "intake.Q2"
+    CAP: "intake.Q3.0" #zip code
+    Q4: "intake.Q4"
+    Q4d_0: "intake.Q4d.0"
+    Q4d_1: "intake.Q4d.1"
+    Q4d_2: "intake.Q4d.2"
+    Q4d_3: "intake.Q4d.3"
+    Q4d_4: "intake.Q4d.4"
+    Q4d_5: "intake.Q4d.5"
+
+    symptoms onset date: "weekly.HS.Q3.0"
+    end of symptoms date: "weekly.HS.Q4.0"
+    fever date: "weekly.HS.Q6.1"
+    Sudden onset: "weekly.HS.Q5"
+    Sudden fever: "weekly.HS.Q6b"
+
+    Have symptoms: "weekly.Q1.0"
+    Fever: "weekly.Q1.1"
+    Chills: "weekly.Q1.2"
+    Runny or blocked nose: "weekly.Q1.3"
+    Sneezing: "weekly.Q1.4"
+    Sore throat: "weekly.Q1.5"
+    Cough: "weekly.Q1.6"
+    Shortness of breath: "weekly.Q1.7"
+    Headache: "weekly.Q1.8"
+    Muscle/joint pain: "weekly.Q1.9"
+    Chest pain: "weekly.Q1.10"
+    Malaise: "weekly.Q1.11"
+    Loss of appetite: "weekly.Q1.12"
+    Coloured sputum: "weekly.Q1.13"
+    Watery, bloodshot eyes: "weekly.Q1.14"
+    Nausea: "weekly.Q1.15"
+    Vomiting: "weekly.Q1.16"
+    Diarrhoea: "weekly.Q1.17"
+    Stomach ache: "weekly.Q1.18"
+    Other: "weekly.Q1.19"
+    Rash: "weekly.Q1.20"
+    Loss of taste: "weekly.Q1.21"
+    Nose bleed: "weekly.Q1.22"
+    Loss of smell: "weekly.Q1.23"
+
+
+directories:
+  weekly: "/Users/mattiamazzoli/influweb-resources/syndromes/weekly/"
+  intake: "/Users/mattiamazzoli/influweb-resources/syndromes/intake/"
+
+credentials:
+  username: xxx
+  password: yyy
